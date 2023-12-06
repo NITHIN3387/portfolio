@@ -34,7 +34,9 @@ const AboutMe = () => {
 
     TagCloud(".tagcloud", texts, options);
 
-    // document.querySelectorAll(".tagcloud")[1].style.display = "none";
+    if (document.querySelectorAll(".tagcloud").length > 1)
+      document.querySelectorAll(".tagcloud")[1].style.display = "none";
+    
   }, []);
 
   return (
