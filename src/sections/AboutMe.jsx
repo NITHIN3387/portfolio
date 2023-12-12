@@ -1,9 +1,9 @@
-"use client";
+'use client'
 import SectionHeader from "@/components/customFonts/SectionHeader";
 import HTML_Tag from "@/components/HTML_Tag";
 import { Poppins } from "next/font/google";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, } from "react";
 import TagCloud from "TagCloud";
 
 const poppins = Poppins({
@@ -12,8 +12,6 @@ const poppins = Poppins({
 });
 
 const AboutMe = () => {
-  const [screenWidth, setScreenWidth] = useState(screen.width)
-
   useEffect(() => {
     const texts = [
       "HTML",
@@ -32,17 +30,15 @@ const AboutMe = () => {
     ];
 
     const options = {
-      radius: screenWidth >= 1440 ? 300 : 250,
+      radius: 300,
     };
-
-    console.log(screenWidth, options.radius);
 
     TagCloud(".tagcloud", texts, options);
 
     if (document.querySelectorAll(".tagcloud").length > 2)
       document.querySelectorAll(".tagcloud")[1].style.display = "none";
 
-  }, [screenWidth]);
+  }, []);
 
   return (
     <div className="relative grid xl:grid-cols-[2fr_3fr] lg:grid-cols-2 grid-cols-1 lg:gap-10 ps-5 items-center">
