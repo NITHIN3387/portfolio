@@ -6,7 +6,9 @@ import Laptop from "./Laptop";
 const ProjectCard = ({ project }) => {
   return (
     <div className="relative flex flex-col items-center xl:p-7 p-5 xl:pr-10 pr-7 rounded-lg backdrop-blur-md bg-white/5 sm:min-w-[25rem] sm:max-w-[25rem] min-w-[19rem] max-w-[19rem] group hover:bg-white/10 snap-center">
-      <p className="group-hover:inline hidden absolute left-7 right-10 text-center">{project.details}</p>
+      <p className="group-hover:inline hidden absolute left-7 right-10 text-center">
+        {project.details}
+      </p>
       <div className="relative w-fit sm:scale-95 scale-[0.7] group-hover:opacity-0 transition-all">
         <div style={{ zoom: "2" }}>
           {project.laptopView && <Laptop imgLink={project.laptopView} />}
@@ -21,7 +23,9 @@ const ProjectCard = ({ project }) => {
         </div>
       </div>
       <div className="flex justify-between items-center pt-5 text-[aqua] border-b border-gray-400 pb-2 w-[100%]">
-        <h3 className="xl:text-[2em] sm:text-[1.9em] text-[1.7em] font-bold">{project.name}</h3>
+        <h3 className="xl:text-[2em] sm:text-[1.9em] text-[1.7em] font-bold">
+          {project.name}
+        </h3>
         <Link
           href={project.githubLink}
           target="_blank"

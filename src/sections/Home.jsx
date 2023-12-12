@@ -6,29 +6,54 @@ import BouncyText from "@/components/customFonts/BouncyText";
 import { Poppins } from "next/font/google";
 
 const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['600']
-})
+  subsets: ["latin"],
+  weight: ["600"],
+});
 
 const Home = () => {
   return (
     <div className="relative flex flex-col justify-center sm:px-10 ps-5">
-      <div className="absolute sm:text-[10em] text-[7em] top-0 right-0 font-extrabold text-white/5">Home</div>
+      <div className="absolute sm:text-[10em] text-[7em] top-0 right-0 font-extrabold text-white/5">
+        Home
+      </div>
       <div>
         <HTML_Tag>h1</HTML_Tag>
 
-        <BouncyText className={poppins.className + " sm:text-[4.5em] text-[4em] font-[900]"}>Hi,</BouncyText>
+        <BouncyText
+          className={
+            poppins.className + " sm:text-[4.5em] text-[4em] font-[900]"
+          }
+        >
+          Hi,
+        </BouncyText>
         <span className="flex items-center">
-          <BouncyText className={poppins.className + " sm:text-[4.5em] text-[4em] font-[900]"}>I&apos;m</BouncyText>
+          <BouncyText
+            className={
+              poppins.className + " sm:text-[4.5em] text-[4em] font-[900]"
+            }
+          >
+            I&apos;m
+          </BouncyText>
           <Image
             src={Logo}
             alt="logo"
             width={0}
             className="sm:h-[58px] sm:w-[65px] h-[50px] w-[60px] translate-x-5"
+            priority
           />
-          <BouncyText className={poppins.className + " sm:text-[4.5em] text-[4em] font-[900]"}>ithin,</BouncyText>
+          <BouncyText
+            className={
+              poppins.className + " sm:text-[4.5em] text-[4em] font-[900]"
+            }
+          >
+            ithin,
+          </BouncyText>
         </span>
-        <BouncyText className={poppins.className + " sm:text-[4.5em] text-[4em] font-[900]"}>
+        <BouncyText
+          className={
+            poppins.className + " sm:text-[4.5em] text-[4em] font-[900]"
+          }
+        >
           Web Developer
         </BouncyText>
 

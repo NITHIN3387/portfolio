@@ -1,9 +1,9 @@
-'use client'
+"use client";
 import SectionHeader from "@/components/customFonts/SectionHeader";
 import HTML_Tag from "@/components/HTML_Tag";
 import { Poppins } from "next/font/google";
 import Image from "next/image";
-import { useEffect, } from "react";
+import { useEffect } from "react";
 import TagCloud from "TagCloud";
 
 const poppins = Poppins({
@@ -37,7 +37,6 @@ const AboutMe = () => {
 
     if (document.querySelectorAll(".tagcloud").length > 2)
       document.querySelectorAll(".tagcloud")[1].style.display = "none";
-
   }, []);
 
   return (
@@ -63,22 +62,64 @@ const AboutMe = () => {
       </div>
 
       <div className="tagcloud lg:flex justify-center text-[aqua] font-bold lg:text-[1.3em] hidden"></div>
-      <HTML_Tag className={'lg:hidden'}>/div</HTML_Tag>
+      <HTML_Tag className={"lg:hidden"}>/div</HTML_Tag>
       <div className="lg:hidden flex gap-5 ps-5 flex-wrap sm:py-0 py-2">
-        <Image src={require('../assets/images/html.png')} alt='html'/>
-        <Image src={require('../assets/images/css.png')} alt='css'/>
-        <Image src={require('../assets/images/js.png')} alt='js'/>
-        <Image src={require('../assets/images/bootstrap.png')} alt='bootstrap'/>
-        <Image src={require('../assets/images/tailwind.svg')} alt='tailwindcss' width={23} />
-        <Image src={require('../assets/images/react.png')} alt='react'/>
-        <Image src={require('../assets/images/nextjs.svg')} alt='nextjs' width={32}/>
-        <Image src={require('../assets/images/nodejs.png')} alt='nodejs' width={32}/>
-        <Image src={require('../assets/images/express.png')} alt='expressjs' width={32}/>
-        <Image src={require('../assets/images/mongodb.png')} alt='mongodb' width={32}/>
-        <Image src={require('../assets/images/firebase.png')} alt='firebase' width={32}/>
-        <Image src={require('../assets/images/python.png')} alt='python'/>
+        <Image src={require("../assets/images/html.png")} alt="html" priority />
+        <Image src={require("../assets/images/css.png")} alt="css" priority />
+        <Image src={require("../assets/images/js.png")} alt="js" priority />
+        <Image
+          src={require("../assets/images/bootstrap.png")}
+          alt="bootstrap"
+          priority
+        />
+        <Image
+          src={require("../assets/images/tailwind.svg")}
+          alt="tailwindcss"
+          width={23}
+          priority
+        />
+        <Image
+          src={require("../assets/images/react.png")}
+          alt="react"
+          priority
+        />
+        <Image
+          src={require("../assets/images/nextjs.svg")}
+          alt="nextjs"
+          width={32}
+          priority
+        />
+        <Image
+          src={require("../assets/images/nodejs.png")}
+          alt="nodejs"
+          width={32}
+          priority
+        />
+        <Image
+          src={require("../assets/images/express.png")}
+          alt="expressjs"
+          width={32}
+          priority
+        />
+        <Image
+          src={require("../assets/images/mongodb.png")}
+          alt="mongodb"
+          width={32}
+          priority
+        />
+        <Image
+          src={require("../assets/images/firebase.png")}
+          alt="firebase"
+          width={32}
+          priority
+        />
+        <Image
+          src={require("../assets/images/python.png")}
+          alt="python"
+          priority
+        />
       </div>
-      <HTML_Tag className={'lg:hidden'}>/div</HTML_Tag>
+      <HTML_Tag className={"lg:hidden"}>/div</HTML_Tag>
     </div>
   );
 };

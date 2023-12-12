@@ -25,7 +25,9 @@ export default function Page() {
           <ContactMe />
         </section>
 
-        <footer className="bg-white/10 py-2 w-[100%] text-center">&copy; Made with love by Nithin N</footer>
+        <footer className="bg-white/10 py-2 w-[100%] text-center">
+          &copy; Made with love by Nithin N
+        </footer>
       </div>
     </div>
   );

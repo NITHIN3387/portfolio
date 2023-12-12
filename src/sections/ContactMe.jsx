@@ -41,11 +41,11 @@ const ContactMe = () => {
           <HTML_Tag>p</HTML_Tag>
 
           <p className="px-5 text-[1.1em] font-medium">
-            I`m thrilled to connect with you. Whether you have a project in mind,
-            a question, or just want to say hi, I`d love to hear from you. Feel
-            free to reach out using the contact form, or connect with me through
-            my social media links. I`m always excited to collaborate and explore
-            new opportunities. Let`s create something awesome together!
+            I`m thrilled to connect with you. Whether you have a project in
+            mind, a question, or just want to say hi, I`d love to hear from you.
+            Feel free to reach out using the contact form, or connect with me
+            through my social media links. I`m always excited to collaborate and
+            explore new opportunities. Let`s create something awesome together!
           </p>
 
           <HTML_Tag>/p</HTML_Tag>
@@ -95,7 +95,7 @@ const ContactMe = () => {
         </div>
 
         <div className="flex flex-col justify-center">
-          <HTML_Tag className={' sm:inline hidden'}>p</HTML_Tag>
+          <HTML_Tag className={" sm:inline hidden"}>p</HTML_Tag>
 
           <p className="px-5 text-[1.1em] font-medium sm:inline hidden">
             I`m thrilled to connect with you. Whether you have a project in
@@ -105,7 +105,7 @@ const ContactMe = () => {
             explore new opportunities. Let`s create something awesome together!
           </p>
 
-          <HTML_Tag className={' sm:inline hidden'}>/p</HTML_Tag>
+          <HTML_Tag className={" sm:inline hidden"}>/p</HTML_Tag>
 
           <HTML_Tag>ul</HTML_Tag>
           <div className="flex gap-5 p-5">
@@ -116,7 +116,7 @@ const ContactMe = () => {
                 target="_blank"
                 className="bg-white/5 p-3 rounded-md hover:-translate-y-2 transition-all"
               >
-                <Image src={list.imgUrl} alt="linkedIn" />
+                <Image src={list.imgUrl} alt="linkedIn" priority />
               </Link>
             ))}
           </div>
