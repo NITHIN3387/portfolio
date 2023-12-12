@@ -1,10 +1,28 @@
+'use client'
 import Navbar from "@/components/Navbar";
 import AboutMe from "@/sections/AboutMe";
 import ContactMe from "@/sections/ContactMe";
 import Home from "@/sections/Home";
 import Projects from "@/sections/Projects";
+import { useEffect } from "react";
 
 export default function Page() {
+  useEffect(() => {
+    switch(window.location.hash){
+      case '#aboutMe':
+        document.getElementById('aboutMe').scrollIntoView({behavior: 'smooth'})
+        break
+      case '#projects':
+        document.getElementById('projects').scrollIntoView({behavior: 'smooth'})
+        break
+      case '#contactMe':
+        document.getElementById('contactMe').scrollIntoView({behavior: 'smooth'})
+        break
+      default:
+        document.getElementById('home').scrollIntoView({behavior: 'smooth'})
+    }
+  }, [])
+
   return (
     <div className="grid grid-rows-[auto_1fr] h-[100dvh]">
       <nav className="relative z-10">
