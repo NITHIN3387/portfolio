@@ -22,6 +22,7 @@
 body{
     background: var(--bg-color);
     color: var(--initial-text-color);
+    user-select: none;
 }
 
 .logo{
@@ -30,10 +31,20 @@ body{
     -webkit-text-fill-color: transparent;
 }
 
-section{
-    display: grid;
-    height: calc(100vh - 88px);
+@media (min-width: 640px) {
+    section{
+        display: grid;
+        height: calc(100vh - 88px);
+    }
 }
+
+@media (max-width: 639px) {
+    section{
+        display: grid;
+        gap: 1rem;
+    }
+}
+
 
 .bounce:hover{
     display: inline-block;
@@ -49,5 +60,31 @@ section{
     }
     65%{
         transform: scale(0.95, 1.15);
+    }
+}
+
+.nav-open{
+    animation: open 0.3s ease-out;
+}
+
+@keyframes open {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.nav-close{
+    animation: close 0.3s ease-out;
+}
+
+@keyframes close {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(100%);
     }
 }

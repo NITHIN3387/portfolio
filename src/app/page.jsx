@@ -6,8 +6,8 @@ import Projects from "@/sections/Projects";
 
 export default function Page() {
   return (
-    <div className="grid grid-rows-[auto_1fr] h-[100vh]">
-      <nav>
+    <div className="grid grid-rows-[auto_1fr] h-[100dvh]">
+      <nav className="relative z-10">
         <Navbar />
       </nav>
 

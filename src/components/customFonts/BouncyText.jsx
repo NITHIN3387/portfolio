@@ -1,5 +1,3 @@
-import React from 'react'
-
 const BouncyText = ({children, className}) => {
   return (
     <div className='ps-5'>

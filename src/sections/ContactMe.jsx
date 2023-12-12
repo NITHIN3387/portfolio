@@ -31,38 +31,81 @@ const ContactMe = () => {
 
   return (
     <div className="flex flex-col justify-center relative ps-5">
-      <div className="absolute text-[10em] top-0 right-0 font-extrabold text-white/5">
-        Contact me
+      <div className="absolute sm:text-[10em] text-[7em] top-0 right-0 font-extrabold text-white/5">
+        Contact
       </div>
       <SectionHeader>Connect me on {">>"}</SectionHeader>
 
-      <div className="grid grid-cols-[2fr_3fr]">
+      <div className="grid xl:grid-cols-[2fr_3fr] md:grid-cols-2">
+        <div className="sm:hidden inline">
+          <HTML_Tag>p</HTML_Tag>
+
+          <p className="px-5 text-[1.1em] font-medium">
+            I`m thrilled to connect with you. Whether you have a project in mind,
+            a question, or just want to say hi, I`d love to hear from you. Feel
+            free to reach out using the contact form, or connect with me through
+            my social media links. I`m always excited to collaborate and explore
+            new opportunities. Let`s create something awesome together!
+          </p>
+
+          <HTML_Tag>/p</HTML_Tag>
+        </div>
         <div className="grid">
           <HTML_Tag>form</HTML_Tag>
           <form className="m-5 p-5 w-[80%] rounded-md bg-white/5 grid gap-5">
             <div className="grid">
               <label htmlFor="name">Name:</label>
-              <input className="rounded-md bg-white/10 mt-2 p-1 ps-2 focus:ring-1 focus:outline-none focus:ring-[aqua]" type="text" id="name" placeholder="Nithin N" required/>
+              <input
+                className="rounded-md bg-white/10 mt-2 p-1 ps-2 focus:ring-1 focus:outline-none focus:ring-[aqua]"
+                type="text"
+                id="name"
+                placeholder="Nithin N"
+                required
+              />
             </div>
             <div className="grid">
               <label htmlFor="email">Email Id:</label>
-              <input className="rounded-md bg-white/10 mt-2 p-1 ps-2 focus:ring-1 focus:outline-none focus:ring-[aqua]" type="email" id="email" placeholder="nithinn9980@gmail.com" required/>
+              <input
+                className="rounded-md bg-white/10 mt-2 p-1 ps-2 focus:ring-1 focus:outline-none focus:ring-[aqua]"
+                type="email"
+                id="email"
+                placeholder="nithinn9980@gmail.com"
+                required
+              />
             </div>
             <div className="grid">
               <label htmlFor="msg">Message:</label>
-              <textarea rows={3} className="rounded-md bg-white/10 mt-2 p-1 ps-2 focus:ring-1 focus:outline-none focus:ring-[aqua]" type="text" id="msg" placeholder="Hello !!!" required/>
+              <textarea
+                rows={3}
+                className="rounded-md bg-white/10 mt-2 p-1 ps-2 focus:ring-1 focus:outline-none focus:ring-[aqua]"
+                type="text"
+                id="msg"
+                placeholder="Hello !!!"
+                required
+              />
             </div>
-            <button className="w-fit text-left bg-[aqua] text-black py-1 px-3 rounded-md" type="submit">Send</button>
+            <button
+              className="w-fit text-left bg-[aqua] text-black py-1 px-3 rounded-md"
+              type="submit"
+            >
+              Send
+            </button>
           </form>
           <HTML_Tag>/form</HTML_Tag>
         </div>
 
         <div className="flex flex-col justify-center">
-            <HTML_Tag>p</HTML_Tag>
-            
-            <p className="px-5 text-[1.1em] font-medium">I`m thrilled to connect with you. Whether you have a project in mind, a question, or just want to say hi, I`d love to hear from you. Feel free to reach out using the contact form, or connect with me through my social media links. I`m always excited to collaborate and explore new opportunities. Let`s create something awesome together!</p>
+          <HTML_Tag className={' sm:inline hidden'}>p</HTML_Tag>
 
-            <HTML_Tag>/p</HTML_Tag>
+          <p className="px-5 text-[1.1em] font-medium sm:inline hidden">
+            I`m thrilled to connect with you. Whether you have a project in
+            mind, a question, or just want to say hi, I`d love to hear from you.
+            Feel free to reach out using the contact form, or connect with me
+            through my social media links. I`m always excited to collaborate and
+            explore new opportunities. Let`s create something awesome together!
+          </p>
+
+          <HTML_Tag className={' sm:inline hidden'}>/p</HTML_Tag>
 
           <HTML_Tag>ul</HTML_Tag>
           <div className="flex gap-5 p-5">
@@ -79,7 +122,6 @@ const ContactMe = () => {
           </div>
           <HTML_Tag>/ul</HTML_Tag>
         </div>
-
       </div>
     </div>
   );

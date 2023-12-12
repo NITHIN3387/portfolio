@@ -13,7 +13,7 @@ const SectionHeader = ({children}) => {
       <HTML_Tag>h2</HTML_Tag>
       <h2
         className={
-          poppins.className + " ps-5 text-[3.5em] font-extrabold text-[aqua]"
+          poppins.className + " ps-5 xl:text-[3.5em] text-[3em] font-extrabold text-[aqua]"
         }
       >
         {children}
