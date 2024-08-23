@@ -20,7 +20,7 @@ const Navbar = () => {
       link: "#projects",
     },
     {
-      title: "Contanct Me",
+      title: "Contact Me",
       link: "#contactMe",
     },
   ];
