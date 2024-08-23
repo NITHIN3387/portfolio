@@ -5,7 +5,7 @@ import SectionHeader from "@/components/customFonts/SectionHeader";
 const Projects = () => {
   const projects = [
     {
-      name: "Gravience website",
+      name: "Grievance website",
       githubLink: "https://github.com/NITHIN3387/grievance-management-system",
       skills: ["NextJs", "Tailwindcss", "NodeJs", "ExpressJs", "firebase"],
       details:
